@@ -1,5 +1,8 @@
 from django.db import models
 from django.urls import reverse
+#from django.contrib.gis.db import models #GEODJANGO MODEL API
+
+import uuid
 
 # Create your models here.
 
@@ -50,3 +53,35 @@ class Book (models.Model):
         return reverse('book-detail', args=[str(self.id)])
 
 
+class BookInstance (models.Model):
+    id = models.UUIDField(primary_key=True,default=uuid.uuid4,help_text="Asigna un ID unico para este libro en toda la biblioteca")
+
+    book = models.ForeignKey(Book,on_delete=models.SET_NULL,null=True)
+
+    editorial = models.CharField(max_length=256)
+
+    due_back = models.DateField(null=True,blank=True)
+
+    LOAN_STATUS = (('m','Mantenimiento'),('p','Prestado'),('d','Disponible'),('r','Reservado'),)
+
+    status = models.CharField(max_length=1,choices=LOAN_STATUS,blank=True,default='m',help_text="Disponibilidad del libro")
+
+    class Meta:
+        ordering = ["due_back"]
+
+    def __str__(self):
+        return 'ID: %s - Title: %s' %(self.id,self.book.title)
+
+
+class Library(models.Model):
+
+    address = models.CharField(max_length=64,help_text="Inserte la direccion")
+
+    postal_code = models.CharField(max_length=5, help_text="Inserte el codigo postal")
+
+    lat = models.DecimalField(max_digits=8, decimal_places=3,blank=True, null=True)
+
+    lon = models.DecimalField(max_digits=8, decimal_places=3,blank=True, null=True)
+
+    def __str__(self):
+        return 'ZIP: %s - Addrress: %s' % (self.postal_code,self.address)
