@@ -9,7 +9,3 @@ admin.site.register(Book)
 admin.site.register(Language)
 admin.site.register(BookInstance)
 admin.site.register(Library)
-
-
-
-
