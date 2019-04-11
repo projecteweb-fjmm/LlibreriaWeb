@@ -47,7 +47,7 @@ class Book (models.Model):
 
     language = models.ManyToManyField(Language, help_text="Selecciona los idiomas que esta escrito el libro")
 
-    date_published = models.DateField(null=True, blank=True)
+    date_published = models.DateField(null=True)
 
     def __str__(self):
         return '%s - %s' % (self.title, self.author)
@@ -65,7 +65,7 @@ class BookInstance (models.Model):
 
     editorial = models.CharField(max_length=256)
 
-    due_back = models.DateField(null=True, blank=True)
+    due_back = models.DateField(null=True)
 
     LOAN_STATUS = (('m', 'Mantenimiento'), ('p', 'Prestado'), ('d', 'Disponible'), ('r', 'Reservado'))
 
