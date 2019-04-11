@@ -17,3 +17,11 @@ def index(request):
     book = Book.objects.all()
 
     return render(request, 'generic.html',context={'book':book})
+
+def libros(request):
+    book = Book.objects.all()
+    return render(request, 'Nav/Libros.html', context={'book': book})
+
+def autores(request):
+    autores = Author.objects.all()
+    return render(request, 'Nav/Autores.html', context={'autores': autores})

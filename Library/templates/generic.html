@@ -21,8 +21,8 @@
 
                 <ul class="nav navbar-nav">
                     <li><a href="{% url 'index' %}">Home</a></li>
-                    <li><a href="#">Libros</a></li>
-                    <li><a href="#">Autores</a></li>
+                    <li><a href="{% url 'libros' %}">Libros</a></li>
+                    <li><a href="{% url 'autores' %}">Autores</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
@@ -40,10 +40,9 @@
             <h1 align="center" style="margin-bottom: 10%">TOP BEST SELLER</h1>
             <div class="container" >
                 <div class="list-group" align="center">
-                 <a href="#" class="list-group-item active">Bests Sellers</a>
-                    {% for i in book %}
-                        <a href="#" class="list-group-item">Title: {{ i.title }} - Author {{ i.author }}</a>
-                    {% endfor %}
+                    
+                    <h2 style="margin-bottom: 2%">Title: El gato que quiso volar alto - Author: Jose Cañas</h2>
+                    <img src="{% static 'pictures/9788424133702-L.jpg'%}">
 
                 </div>
             </div>
