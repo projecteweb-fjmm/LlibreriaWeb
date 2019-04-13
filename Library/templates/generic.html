@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
 </head>
 <body>
@@ -37,12 +37,15 @@
         </nav>
 
         {% block content %}
-            <h1 align="center" style="margin-bottom: 10%">TOP BEST SELLER</h1>
+            <h1 align="center" style="margin-bottom: 2%">TOP BEST SELLER</h1>
             <div class="container" >
-                <div class="list-group" align="center">
+                <div  align="center">
                     
-                    <h2 style="margin-bottom: 2%">Title: El gato que quiso volar alto - Author: Jose Cañas</h2>
-                    <img src="{% static 'pictures/9788424133702-L.jpg'%}">
+                    <h3 style="margin-bottom: 2%">Title: El gato que quiso volar alto - Author: Jose Cañas</h3>
+                    <img style="margin-bottom: 4%" src="{% static 'pictures/9788424133702-L.jpg'%}" alt="Portada de 'El gato que quiso volar alto">
+
+                    <h3 style="margin-bottom: 4%">Title: La fi del Macot - Author: Josep Lladanosa Pujo</h3>
+                    <img style="margin-bottom: 2% "src="{% static 'pictures/image008.jpg'%}" alt="Portada de 'La fi del Macot">
 
                 </div>
             </div>
