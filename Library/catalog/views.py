@@ -15,11 +15,11 @@ def index(request):
 def libros(request):
     book = Book.objects.all()
 
-    return render(request, 'Nav/Libros.html', context={'book': book})
+    return render(request, 'nav/Libros.html', context={'book': book})
 
 def autores(request):
     autores = Author.objects.all()
-    return render(request, 'Nav/Autores.html', context={'autores': autores})
+    return render(request, 'nav/Autores.html', context={'autores': autores})
 
 class SignUp(generic.CreateView):
     form_class = UserCreationForm
