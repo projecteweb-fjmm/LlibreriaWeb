@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Library.urls'
@@ -158,7 +159,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-STATIC_URL = '/static/'
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_URL = '/static/'
+#Heroku
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# Extra places for collectstatic to find static files.
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+#Login & Logout
 LOGIN_REDIRECT_URL='/'
 LOGOUT_REDIRECT_URL = '/'
