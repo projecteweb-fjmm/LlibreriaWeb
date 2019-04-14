@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>Inicio</title> {% endblock %}
+
+     <!-- BOOTSTRAP 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    {% load static %}
+
+</head>
+<body>
+
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'libros' %}">Libros</a></li>
+                    <li><a href="{% url 'autores' %}">Autores</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    {% if user.is_authenticated %}
+                        <li><a href="#"><span class="glyphicon"></span> Hi {{ user.username }}</a></li>
+                        <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}
+            <h1 align="center" style="margin-bottom: 2%">TOP BEST SELLER</h1>
+            <div class="container" >
+                <div  align="center">
+                    
+                    <h3 style="margin-bottom: 2%">Title: El gato que quiso volar alto - Author: Jose Cañas</h3>
+                    <img style="margin-bottom: 4%" src="{% static 'pictures/9788424133702-L.jpg'%}" alt="Portada de 'El gato que quiso volar alto">
+
+                    <h3 style="margin-bottom: 4%">Title: La fi del Macot - Author: Josep Lladanosa Pujo</h3>
+                    <img style="margin-bottom: 2% "src="{% static 'pictures/image008.jpg'%}" alt="Portada de 'La fi del Macot">
+
+                </div>
+            </div>
+
+        {% endblock %}
+
+</body>
+</html>
