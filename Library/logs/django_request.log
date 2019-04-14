@@ -630,3 +630,5 @@ django.db.utils.OperationalError: no such table: catalog_book
 2019-04-14 13:17:08,266 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 13:21:43,253 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 13:21:48,052 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-14 17:26:18,474 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 17:26:28,839 [WARNING] django.request: Not Found: /favicon.ico
