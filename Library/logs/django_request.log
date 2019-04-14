@@ -621,3 +621,12 @@ django.db.utils.OperationalError: no such table: catalog_book
 2019-04-14 12:37:46,905 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 12:44:29,326 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 12:44:31,784 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-14 13:07:23,194 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 13:07:32,113 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-14 13:07:49,549 [INFO] django.utils.autoreload: /home/francesc/Escritorio/LlibreriaWeb/Library/catalog/views.py changed, reloading.
+2019-04-14 13:07:50,469 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 13:08:29,064 [INFO] django.utils.autoreload: /home/francesc/Escritorio/LlibreriaWeb/Library/catalog/views.py changed, reloading.
+2019-04-14 13:08:29,864 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 13:17:08,266 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 13:21:43,253 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 13:21:48,052 [WARNING] django.request: Not Found: /favicon.ico

@@ -13,12 +13,12 @@ def index(request):
     return render(request, 'generic.html',context={'book':book})
 
 def libros(request):
-    book = Book.objects.all()
+    book = Book.objects.all().order_by('title')
 
     return render(request, 'nav/Libros.html', context={'book': book})
 
 def autores(request):
-    autores = Author.objects.all()
+    autores = Author.objects.all().order_by('first_name')
     return render(request, 'nav/Autores.html', context={'autores': autores})
 
 class SignUp(generic.CreateView):
