@@ -1021,3 +1021,4 @@ http://whitenoise.evans.io/en/stable/changelog.html#v4-0
 2019-04-14 16:12:04,731 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 16:12:04,919 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 16:12:18,871 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-14 16:41:40,083 [INFO] django.utils.autoreload: /app/Library/settings.py changed, reloading.
