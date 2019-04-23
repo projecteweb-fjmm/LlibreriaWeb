@@ -1,6 +1,8 @@
 from django.db import models
 from django.urls import reverse
 # from django.contrib.gis.db import models #GEODJANGO MODEL API
+from datetime import date
+from django.contrib.auth.models import User
 
 import uuid
 
@@ -49,6 +51,8 @@ class Book (models.Model):
 
     date_published = models.DateField(null=True)
 
+    user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
+
     def __str__(self):
         return '%s - %s' % (self.title, self.author)
 
@@ -57,8 +61,26 @@ class Book (models.Model):
         return reverse('book-detail', args=[str(self.id)])
 
 
+class Review(models.Model):
+    RATING_CHOICES = ((1, 'one'), (2, 'two'), (3, 'three'), (4, 'four'), (5, 'five'))
+    rating = models.PositiveSmallIntegerField('Rating (stars)', blank=False, default=3, choices=RATING_CHOICES)
+    comment = models.TextField(blank=True, null=True)
+    user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
+    date = models.DateField(default=date.today)
+
+    class Meta:
+        abstract = True
+
+
+class BookReview(Review):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ("book", "user")
+
+
 class BookInstance (models.Model):
-    id = models.UUIDField(primary_key=True,default=uuid.uuid4,
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                           help_text="Asigna un ID unico para este libro en toda la biblioteca")
 
     book = models.ForeignKey(Book, on_delete=models.SET_NULL, null=True)
