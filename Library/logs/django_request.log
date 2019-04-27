@@ -1679,3 +1679,11 @@ django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
 2019-04-27 20:11:07,947 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py changed, reloading.
 2019-04-27 20:11:10,655 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-27 20:17:57,504 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:22:47,303 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:26:55,063 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:29:25,176 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:33:19,338 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:35:02,583 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:37:28,789 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:45:03,614 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:45:05,166 [WARNING] django.request: Not Found: /favicon.ico

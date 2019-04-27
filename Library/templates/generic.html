@@ -22,11 +22,12 @@
                     <li><a href="{% url 'index' %}">Home</a></li>
                     <li><a href="{% url 'all_books' %}">Libros</a></li>
                     <li><a href="{% url 'author' %}">Autores</a></li>
-                     <li><a href="{% url 'book_create' %}">Registrar Libro</a></li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
                         <li><a href="#"><span class="glyphicon"></span> Hi {{ user.username }}</a></li>
+                        <li><a href="{% url 'book_create' %}"><span class="glyphicon glyphicon-cloud-upload"></span></a></li>
                         <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                     {% else %}
                         <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

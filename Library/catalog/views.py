@@ -52,12 +52,12 @@ class AuthorDetailView(generic.DetailView):
     template_name = 'catalog/author_detail.html'
     model = Author
 
-class BookUpdate(generic.UpdateView):
+class BookUpdate(LoginRequiredMixin,generic.UpdateView):
     template_name = 'changes/UpdateBook.html'
     model = Book
     fields = '__all__'
 
-class BookDelete(generic.DeleteView):
+class BookDelete(LoginRequiredMixin,generic.DeleteView):
     template_name = 'changes/DeleteBook.html'
     model = Book
     success_url = reverse_lazy('index')
