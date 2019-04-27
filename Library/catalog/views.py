@@ -7,9 +7,6 @@ from django.views import generic
 
 # Create your views here.
 
-# TODO: Create, modify and delete views for books and libraries (marcalba80) assignment 2
-
-
 def index(request):
     book = Book.objects.all()
 
@@ -23,9 +20,8 @@ def libros(request):
 
 
 def autores(request):
-    authors = Author.objects.all().order_by('first_name')
-    return render(request, 'nav/Autores.html', context={'autores': authors})
-
+    autores = Author.objects.all().order_by('first_name')
+    return render(request, 'nav/Autores.html', context={'autores': autores})
 
 class SignUp(generic.CreateView):
     form_class = UserCreationForm

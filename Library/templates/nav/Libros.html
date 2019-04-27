@@ -1,12 +1,12 @@
 {% extends 'generic.html' %}
 {% block title %}<title>Libros</title>{% endblock %}
 {% block content %}
-     <h1 align="center" style="margin-bottom: 10%">TOP BEST SELLER</h1>
+     <h1 align="center" style="margin-bottom: 10%">Top Libros</h1>
             <div class="container" >
                 <div class="list-group" align="center">
-                 <a href="#" class="list-group-item active">Bests Sellers</a>
+                 <a href="#" class="list-group-item active">Libros</a>
                     {% for i in book %}
-                        <a href="#" class="list-group-item">Title: {{ i.title }} - Author {{ i.author }}</a>
+                        <a href="#" class="list-group-item">" {{ i.title }} " by {{ i.author }}</a>
                     {% endfor %}
 
                 </div>
