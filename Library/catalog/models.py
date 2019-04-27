@@ -57,8 +57,7 @@ class Book (models.Model):
         return '%s - %s' % (self.title, self.author)
 
     def get_absolute_url(self):
-
-        return reverse('book-detail', args=[str(self.id)])
+        return reverse('book_details', kwargs={'pk':self.pk})
 
 
 class Review(models.Model):
@@ -113,3 +112,4 @@ class Library(models.Model):
 
     def __str__(self):
         return 'ZIP: %s - Addrress: %s' % (self.postal_code, self.address)
+

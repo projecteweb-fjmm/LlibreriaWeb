@@ -1,9 +1,15 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from .models import Book, Author
+
+
+
 
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
+from catalog.forms import *
+from django.views.generic.edit import FormView
 
 # Create your views here.
 
@@ -22,6 +28,16 @@ def libros(request):
 def autores(request):
     autores = Author.objects.all().order_by('first_name')
     return render(request, 'nav/Autores.html', context={'autores': autores})
+
+class BookCreate(LoginRequiredMixin,generic.CreateView):
+    template_name = 'nav/CreateBook.html'
+    model = Book
+    form_class = BookForm
+    success_url = '/libros'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(BookCreate,self).form_valid(form)
 
 class SignUp(generic.CreateView):
     form_class = UserCreationForm

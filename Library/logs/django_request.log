@@ -636,3 +636,754 @@ django.db.utils.OperationalError: no such table: catalog_book
 2019-04-14 18:15:59,013 [WARNING] django.request: Not Found: /favicon.ico
 2019-04-14 18:17:16,925 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-14 18:17:23,504 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 16:23:37,957 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:23:44,240 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 16:23:47,784 [ERROR] django.request: Internal Server Error: /libros/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: catalog_book.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 19, in libros
+    return render(request, 'nav/Libros.html', context={'book': book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\models\sql\compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: catalog_book.user_id
+2019-04-27 16:24:27,313 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:31:37,679 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 16:32:04,859 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:37:00,656 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py changed, reloading.
+2019-04-27 16:37:04,354 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:52:30,307 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:52:34,923 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2019-04-27 16:56:31,066 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:56:34,111 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2019-04-27 16:57:20,092 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2019-04-27 16:57:20,204 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 16:57:21,508 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:57:21,852 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: as_view() takes 1 positional argument but 2 were given
+2019-04-27 16:57:29,492 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:57:30,649 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: as_view() takes 1 positional argument but 2 were given
+2019-04-27 16:57:38,626 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 16:57:39,979 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:58:11,484 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 35, in form_valid
+    return super(registrar_libro, self).form_valid()
+TypeError: form_valid() missing 1 required positional argument: 'form'
+2019-04-27 16:58:39,359 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 16:59:25,126 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 35, in form_valid
+    return super(registrar_libro, self).form_valid()
+TypeError: form_valid() missing 1 required positional argument: 'form'
+2019-04-27 17:00:13,103 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py changed, reloading.
+2019-04-27 17:00:14,682 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:05:33,205 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:05:36,355 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
+2019-04-27 17:06:06,600 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\forms.py changed, reloading.
+2019-04-27 17:06:07,940 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:06:08,490 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
+2019-04-27 17:06:10,467 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
+2019-04-27 17:07:41,433 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
+2019-04-27 17:07:48,098 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:07:51,106 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
+2019-04-27 17:08:40,157 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:08:54,561 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 61, in get_absolute_url
+    return reverse('book-detail', kwargs={'pk':self.pk})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' not found. 'book-detail' is not a valid view function or pattern name.
+2019-04-27 17:10:14,632 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 17:10:15,980 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:10:22,476 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:10:33,010 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 61, in get_absolute_url
+    return reverse('book-detail', kwargs={'pk':self.pk})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-detail' not found. 'book-detail' is not a valid view function or pattern name.
+2019-04-27 17:11:22,873 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py changed, reloading.
+2019-04-27 17:11:24,277 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:11:30,525 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 61, in get_absolute_url
+    return reverse('book-details', kwargs={'pk':self.pk})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-details' not found. 'book-details' is not a valid view function or pattern name.
+2019-04-27 17:12:09,571 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py changed, reloading.
+2019-04-27 17:12:10,914 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:13:05,778 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:13:26,289 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 17:13:27,628 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:13:28,072 [WARNING] django.request: Not Found: /registrar_libro/
+2019-04-27 17:14:06,803 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:14:08,428 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with no arguments not found. 1 pattern(s) tried: ['registrar_libro/(?P<pk>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/$']
+2019-04-27 17:14:33,053 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 17:14:34,377 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:15:49,275 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:15:55,738 [ERROR] django.request: Internal Server Error: /registrar_libro/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 61, in get_absolute_url
+    return reverse('book-details', kwargs={'pk':str(self.id)})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-details' not found. 'book-details' is not a valid view function or pattern name.
+2019-04-27 17:17:41,367 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 17:17:44,726 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:19:25,491 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:19:27,150 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with arguments '('',)' not found. 1 pattern(s) tried: ['registrar_libro\\/(?P<book_id>[0-9]+)$']
+2019-04-27 17:19:32,993 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with arguments '('',)' not found. 1 pattern(s) tried: ['registrar_libro\\/(?P<book_id>[0-9]+)$']
+2019-04-27 17:19:33,985 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with arguments '('',)' not found. 1 pattern(s) tried: ['registrar_libro\\/(?P<book_id>[0-9]+)$']
+2019-04-27 17:19:34,694 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with arguments '('',)' not found. 1 pattern(s) tried: ['registrar_libro\\/(?P<book_id>[0-9]+)$']
+2019-04-27 17:19:42,497 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with arguments '('',)' not found. 1 pattern(s) tried: ['registrar_libro\\/(?P<book_id>[0-9]+)$']
+2019-04-27 17:19:43,383 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 16, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' with arguments '('',)' not found. 1 pattern(s) tried: ['registrar_libro\\/(?P<book_id>[0-9]+)$']
+2019-04-27 17:22:52,081 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py changed, reloading.
+2019-04-27 17:22:53,448 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:36:09,853 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:36:49,225 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:37:08,750 [ERROR] django.request: Internal Server Error: /book_create/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 39, in form_valid
+    return super(BookCreate,self).form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 61, in get_absolute_url
+    return reverse('book-details', kwargs={'pk':self.pk})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-details' not found. 'book-details' is not a valid view function or pattern name.
+2019-04-27 17:41:00,293 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:41:07,024 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 17:41:21,696 [ERROR] django.request: Internal Server Error: /book_create/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 39, in form_valid
+    return super(BookCreate,self).form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 61, in get_absolute_url
+    return reverse('book-details', kwargs={'pk':self.pk})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book-details' not found. 'book-details' is not a valid view function or pattern name.
+2019-04-27 17:44:43,064 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:44:46,730 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 19, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' not found. 'book_details' is not a valid view function or pattern name.
+2019-04-27 17:44:47,280 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 17:46:57,538 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:47:19,954 [ERROR] django.request: Internal Server Error: /book/create
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 39, in form_valid
+    return super(BookCreate,self).form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 126, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 57, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\edit.py", line 116, in get_success_url
+    url = self.object.get_absolute_url()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 60, in get_absolute_url
+    return reverse('book_details', kwargs={'pk':self.pk})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' not found. 'book_details' is not a valid view function or pattern name.
+2019-04-27 17:48:56,455 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:49:38,859 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 17:53:03,004 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
