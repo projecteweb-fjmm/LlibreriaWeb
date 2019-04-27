@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.shortcuts import render
 from .models import Book, Author
 
@@ -30,10 +30,10 @@ def autores(request):
     return render(request, 'nav/Autores.html', context={'autores': autores})
 
 class BookCreate(LoginRequiredMixin,generic.CreateView):
-    template_name = 'nav/CreateBook.html'
+    template_name = 'changes/CreateBook.html'
     model = Book
     form_class = BookForm
-    success_url = '/libros'
+    success_url = '/all_books'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -51,3 +51,13 @@ class BookDetailView(generic.DetailView):
 class AuthorDetailView(generic.DetailView):
     template_name = 'catalog/author_detail.html'
     model = Author
+
+class BookUpdate(generic.UpdateView):
+    template_name = 'changes/UpdateBook.html'
+    model = Book
+    fields = '__all__'
+
+class BookDelete(generic.DeleteView):
+    template_name = 'changes/DeleteBook.html'
+    model = Book
+    success_url = reverse_lazy('index')

@@ -1,10 +1,10 @@
 {% extends 'generic.html' %}
 {% block title %}<title>Registrar Libro</title>{% endblock %}
 {% block content %}
-<h1>Salio todo bien hp</h1>
 
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Save">
+    <input type="submit" value="Update">
 </form>
+
 {% endblock %}
