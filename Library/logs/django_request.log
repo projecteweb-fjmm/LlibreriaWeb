@@ -1546,3 +1546,7 @@ AttributeError: Generic detail view AuthorDetailView must be called with either 
 2019-04-27 19:23:41,254 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-27 19:23:45,412 [WARNING] django.request: Not Found: /favicon.ico
 2019-04-27 19:24:05,936 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:29:52,562 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:29:53,857 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 19:30:53,425 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:36:48,910 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

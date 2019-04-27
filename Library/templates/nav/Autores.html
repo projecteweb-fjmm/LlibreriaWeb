@@ -6,7 +6,7 @@
                 <div class="list-group" align="center">
                  <a href="#" class="list-group-item active">Autores</a>
                     {% for i in autores %}
-                        <a href="#" class="list-group-item">{{ i.first_name }} {{ i.second_name }}</a>
+                        <a href="{% url 'author_detail' i.pk  %} " class="list-group-item">{{ i.first_name }} {{ i.second_name }}</a>
                     {% endfor %}
                 </div>
             </div>
