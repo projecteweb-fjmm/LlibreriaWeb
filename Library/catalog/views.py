@@ -43,3 +43,11 @@ class SignUp(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'registration/signup.html'
+
+class BookDetailView(generic.DetailView):
+    template_name = 'catalog/book_detail.html'
+    model = Book
+
+class AuthorDetailView(generic.DetailView):
+    template_name = 'catalog/author_detail.html'
+    model = Author

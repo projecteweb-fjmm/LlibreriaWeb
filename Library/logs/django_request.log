@@ -1387,3 +1387,162 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'book_details' not found. 'bo
 2019-04-27 17:48:56,455 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-27 17:49:38,859 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-27 17:53:03,004 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:13:56,698 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:13:58,254 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 18:14:04,213 [WARNING] django.request: Not Found: /a
+2019-04-27 18:14:14,151 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:14:19,393 [WARNING] django.request: Not Found: /book/0
+2019-04-27 18:14:43,071 [WARNING] django.request: Not Found: /book/0
+2019-04-27 18:18:13,535 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:18:27,927 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:23:23,465 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:23:30,204 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:24:58,387 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:25:04,851 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:25:25,294 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:25:32,551 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:26:01,178 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:26:07,785 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:26:54,485 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:27:01,617 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:27:22,256 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:50:03,093 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:50:10,608 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:54:21,964 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:54:29,275 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:59:19,027 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 18:59:29,340 [WARNING] django.request: Not Found: /book/1
+2019-04-27 18:59:33,259 [WARNING] django.request: Not Found: /book/2
+2019-04-27 18:59:36,298 [WARNING] django.request: Not Found: /book/3
+2019-04-27 19:01:48,054 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:01:48,720 [WARNING] django.request: Not Found: /book/3
+2019-04-27 19:01:51,738 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:01:53,488 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:01:53,883 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:01:54,092 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:01:54,277 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:01:54,451 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:02:06,956 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:02:10,498 [WARNING] django.request: Not Found: /book/2
+2019-04-27 19:02:30,212 [ERROR] django.request: Internal Server Error: /book/10
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_detail.html
+2019-04-27 19:02:40,069 [ERROR] django.request: Internal Server Error: /book/10
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/book_detail.html
+2019-04-27 19:03:13,634 [WARNING] django.request: Not Found: /book/1
+2019-04-27 19:06:56,889 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:13:09,493 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:13:12,636 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 19, in index
+    return render(request, 'generic.html', context={'book':book})
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\urls\resolvers.py", line 660, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'libros' not found. 'libros' is not a valid view function or pattern name.
+2019-04-27 19:13:14,657 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 19:14:00,370 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 19:14:20,320 [ERROR] django.request: Internal Server Error: /author/2
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: as_view() takes 1 positional argument but 2 were given
+2019-04-27 19:15:10,119 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\urls.py changed, reloading.
+2019-04-27 19:15:12,844 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:16:12,292 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 19:16:30,612 [ERROR] django.request: Internal Server Error: /author/2
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\detail.py", line 47, in get_object
+    "pk or a slug in the URLconf." % self.__class__.__name__
+AttributeError: Generic detail view AuthorDetailView must be called with either an object pk or a slug in the URLconf.
+2019-04-27 19:17:11,663 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 19:17:23,105 [ERROR] django.request: Internal Server Error: /author/2
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\detail.py", line 47, in get_object
+    "pk or a slug in the URLconf." % self.__class__.__name__
+AttributeError: Generic detail view AuthorDetailView must be called with either an object pk or a slug in the URLconf.
+2019-04-27 19:21:07,062 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:21:33,249 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:23:41,254 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 19:23:45,412 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 19:24:05,936 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
