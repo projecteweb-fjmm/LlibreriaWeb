@@ -3,10 +3,15 @@
 {% block content %}
 <div class="container">
         <div class="list-group">
+
+            {% if user == book.user %}
 <form method="post">{% csrf_token %}
     <p>Are you sure you want to delete "{{ book }}"?</p>
     <input type="submit" value="Confirm">
 </form>
+            {% else %}
+                <h1>No tienes permisos de edición</h1>
+            {% endif %}
           </div>
     </div>
 

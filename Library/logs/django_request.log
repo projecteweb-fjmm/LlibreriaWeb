@@ -1687,3 +1687,74 @@ django.template.exceptions.TemplateDoesNotExist: catalog/book_form.html
 2019-04-27 20:37:28,789 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-27 20:45:03,614 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2019-04-27 20:45:05,166 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-27 20:53:34,041 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-27 20:53:39,897 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-28 00:43:30,631 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-28 00:43:33,264 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-28 00:43:37,751 [ERROR] django.request: Internal Server Error: /book/update/13
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 83, in dispatch
+    if not self.has_permission():
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 79, in has_permission
+    perms = self.get_permission_required()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 67, in get_permission_required
+    '{0}.get_permission_required().'.format(self.__class__.__name__)
+django.core.exceptions.ImproperlyConfigured: BookUpdate is missing the permission_required attribute. Define BookUpdate.permission_required, or override BookUpdate.get_permission_required().
+2019-04-28 00:44:01,145 [ERROR] django.request: Internal Server Error: /book/update/15
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 83, in dispatch
+    if not self.has_permission():
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 79, in has_permission
+    perms = self.get_permission_required()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 67, in get_permission_required
+    '{0}.get_permission_required().'.format(self.__class__.__name__)
+django.core.exceptions.ImproperlyConfigured: BookUpdate is missing the permission_required attribute. Define BookUpdate.permission_required, or override BookUpdate.get_permission_required().
+2019-04-28 00:44:21,895 [ERROR] django.request: Internal Server Error: /book/update/15
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 83, in dispatch
+    if not self.has_permission():
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 79, in has_permission
+    perms = self.get_permission_required()
+  File "C:\Users\Francesc\Documents\Virtualenv\projecteweb_env\lib\site-packages\django\contrib\auth\mixins.py", line 67, in get_permission_required
+    '{0}.get_permission_required().'.format(self.__class__.__name__)
+django.core.exceptions.ImproperlyConfigured: BookUpdate is missing the permission_required attribute. Define BookUpdate.permission_required, or override BookUpdate.get_permission_required().
+2019-04-28 00:47:52,673 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-28 00:51:22,663 [INFO] django.utils.autoreload: C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py changed, reloading.
+2019-04-28 00:51:23,919 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-28 00:57:13,218 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-28 18:10:37,618 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-04-28 18:10:44,928 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-29 10:08:45,817 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-29 10:10:38,236 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-29 17:36:02,194 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-29 17:41:12,944 [WARNING] django.request: Not Found: /favicon.ico
