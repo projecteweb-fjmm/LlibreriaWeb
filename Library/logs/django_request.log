@@ -1758,3 +1758,43 @@ django.core.exceptions.ImproperlyConfigured: BookUpdate is missing the permissio
 2019-04-29 10:10:38,236 [WARNING] django.request: Not Found: /favicon.ico
 2019-04-29 17:36:02,194 [WARNING] django.request: Not Found: /favicon.ico
 2019-04-29 17:41:12,944 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-30 09:09:53,103 [WARNING] django.request: Not Found: /favicon.ico
+2019-04-30 09:39:20,176 [WARNING] django.request: Not Found: /book/create/16
+2019-04-30 10:10:59,421 [WARNING] django.request: Forbidden (Permission denied): /book/update/13
+Traceback (most recent call last):
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\views\generic\edit.py", line 189, in get
+    self.object = self.get_object()
+  File "C:\Users\Francesc Contreras\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 17, in get_object
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+2019-04-30 10:11:12,362 [WARNING] django.request: Forbidden (Permission denied): /book/delete/13
+Traceback (most recent call last):
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\auth\mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Francesc Contreras\Documents\Virtualenv\modelproces_env\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\Francesc Contreras\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 17, in get_object
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied

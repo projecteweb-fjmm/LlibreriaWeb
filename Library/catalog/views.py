@@ -1,12 +1,23 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.http import Http404
 from django.shortcuts import render
 from .models import Book, Author
-
+from django.core.exceptions import PermissionDenied
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
 from catalog.forms import *
-from django.views.generic.edit import FormView
+
+
+# Security Mixin
+class CheckIsOwnerMixin(object):
+    def get_object(self, *args, **kwargs):
+        obj = super(CheckIsOwnerMixin, self).get_object(*args, **kwargs)
+        if not obj.user == self.request.user:
+            raise PermissionDenied
+        return obj
+
+
 
 # Create your views here.
 
@@ -26,15 +37,7 @@ def autores(request):
     autores = Author.objects.all().order_by('first_name')
     return render(request, 'nav/Autores.html', context={'autores': autores})
 
-class BookCreate(LoginRequiredMixin,generic.CreateView):
-    template_name = 'changes/CreateBook.html'
-    model = Book
-    form_class = BookForm
-    success_url = '/all_books'
 
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        return super(BookCreate,self).form_valid(form)
 
 class SignUp(generic.CreateView):
     form_class = UserCreationForm
@@ -49,12 +52,24 @@ class AuthorDetailView(generic.DetailView):
     template_name = 'catalog/author_detail.html'
     model = Author
 
-class BookUpdate(LoginRequiredMixin,generic.UpdateView):
+class BookCreate(LoginRequiredMixin,generic.CreateView):
+    template_name = 'changes/CreateBook.html'
+    model = Book
+    form_class = BookForm
+    success_url = '/all_books'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(BookCreate,self).form_valid(form)
+
+class BookUpdate(LoginRequiredMixin,CheckIsOwnerMixin,generic.UpdateView):
     template_name = 'changes/UpdateBook.html'
     model = Book
     fields = ['title','author','summary','isb','genre','language','date_published']
 
-class BookDelete(LoginRequiredMixin,generic.DeleteView):
+class BookDelete(LoginRequiredMixin,CheckIsOwnerMixin,generic.DeleteView):
     template_name = 'changes/DeleteBook.html'
     model = Book
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('all_books')
+
+
