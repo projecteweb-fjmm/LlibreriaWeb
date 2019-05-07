@@ -54,6 +54,8 @@ class Book (models.Model):
 
     date_published = models.DateField(null=True)
 
+    picture = models.ImageField(default="default.png", null=False)
+
     user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
 
     def __str__(self):

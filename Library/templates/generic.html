@@ -41,13 +41,10 @@
             <h1 align="center" style="margin-bottom: 2%">TOP BEST SELLER</h1>
             <div class="container" >
                 <div  align="center">
-                    
-                    <h3 style="margin-bottom: 2%">Title: El gato que quiso volar alto - Author: Jose Cañas</h3>
-                    <img style="margin-bottom: 4%" src="{% static 'pictures/9788424133702-L.jpg'%}" alt="Portada de 'El gato que quiso volar alto">
-
-                    <h3 style="margin-bottom: 4%">Title: La fi del Macot - Author: Josep Lladanosa Pujo</h3>
-                    <img style="margin-bottom: 2% "src="{% static 'pictures/image008.jpg'%}" alt="Portada de 'La fi del Macot">
-
+                    {% for llibre in book %}
+                        <h3 style="margin-bottom: 2%"> {{ llibre.title }} - {{ llibre.author }}</h3>
+                        <img style="margin-bottom: 4%" src="{{ llibre.picture.url }}" alt="{{ llibre.title }}">
+                    {% endfor %}
                 </div>
             </div>
 

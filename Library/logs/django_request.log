@@ -1798,3 +1798,311 @@ Traceback (most recent call last):
   File "C:\Users\Francesc Contreras\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 17, in get_object
     raise PermissionDenied
 django.core.exceptions.PermissionDenied
+2019-05-05 16:42:01,860 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-06 17:51:10,665 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-06 17:52:31,035 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-06 17:52:31,051 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-06 17:52:31,051 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-06 17:52:31,064 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-06 17:52:31,079 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-06 17:52:31,109 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-06 17:52:31,121 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-06 17:52:31,215 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-06 17:52:31,227 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-06 17:52:31,236 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-06 17:52:31,250 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-06 17:52:31,250 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-06 17:52:31,257 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-06 17:52:31,268 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-06 17:52:31,268 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-06 17:52:31,278 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-06 17:52:31,288 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-06 17:52:31,305 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-06 17:52:31,316 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-06 17:52:31,338 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-06 17:52:31,344 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-06 17:52:31,358 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-06 17:52:31,358 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-06 17:52:31,358 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-06 17:52:31,376 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-06 17:52:31,385 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-06 17:52:31,385 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-06 17:52:31,396 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-06 17:52:31,406 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-06 17:52:31,412 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-06 17:52:31,426 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-06 17:52:31,435 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-06 17:52:31,435 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-06 17:52:31,478 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-06 17:52:31,487 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-06 17:52:31,487 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-06 17:52:31,487 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-06 17:52:31,499 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-06 17:52:31,509 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-06 17:52:31,518 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-06 17:52:31,529 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-06 17:52:31,537 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-06 17:52:31,537 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-06 17:52:31,579 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-06 17:52:31,587 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-06 17:52:31,597 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-06 17:52:31,612 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2019-05-06 17:52:37,594 [WARNING] django.request: Not Found: /media/P1_MP_Diagrama.jpg
+2019-05-06 18:05:24,277 [WARNING] django.request: Not Found: /media/P1_MP_Diagrama.jpg
+2019-05-06 18:05:24,454 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-06 18:11:10,790 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-06 18:11:10,795 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-06 18:11:10,795 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-06 18:11:10,797 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-06 18:11:10,798 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-06 18:11:10,798 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-06 18:11:10,803 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-06 18:11:10,853 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-06 18:11:10,853 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-06 18:11:10,853 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-06 18:11:10,857 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-06 18:11:10,857 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-06 18:11:10,862 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-06 18:11:10,863 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-06 18:11:10,863 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-06 18:11:10,863 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-06 18:11:10,867 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-06 18:11:10,869 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-06 18:11:10,870 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-06 18:11:10,871 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-06 18:11:10,871 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-06 18:11:10,875 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-06 18:11:10,876 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-06 18:11:10,876 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-06 18:11:10,877 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-06 18:11:10,877 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-06 18:11:10,877 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-06 18:11:10,881 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-06 18:11:10,883 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-06 18:11:10,883 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-06 18:11:10,883 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-06 18:11:10,883 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-06 18:11:10,888 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-06 18:11:10,903 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-06 18:11:10,903 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-06 18:11:10,903 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-06 18:11:10,907 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-06 18:11:10,907 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-06 18:11:10,907 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-06 18:11:10,911 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-06 18:11:10,911 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-06 18:11:10,911 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-06 18:11:10,911 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-06 18:11:10,917 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-06 18:11:10,917 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-06 18:11:10,917 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-06 18:11:10,922 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2019-05-07 10:15:50,273 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-07 10:18:10,219 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:19:56,366 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:20:21,142 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:23:04,040 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:24:06,010 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:24:06,059 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:24:25,848 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:25:08,470 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:25:08,512 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:25:14,709 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:25:14,850 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:22,568 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:22,670 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:25,432 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:25,555 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:27,469 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:27,514 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:28,483 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:28,601 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:30,758 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:30,882 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:38,109 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:27:38,192 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:28:06,183 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-07 10:28:06,192 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-07 10:28:06,192 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-07 10:28:06,200 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-07 10:28:06,208 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-07 10:28:06,223 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-07 10:28:06,230 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-07 10:28:06,283 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-07 10:28:06,291 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-07 10:28:06,297 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-07 10:28:06,309 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-07 10:28:06,309 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-07 10:28:06,319 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-07 10:28:06,327 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-07 10:28:06,327 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-07 10:28:06,336 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-07 10:28:06,343 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-07 10:28:06,360 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-07 10:28:06,370 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-07 10:28:06,389 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-07 10:28:06,398 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-07 10:28:06,405 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-07 10:28:06,405 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-07 10:28:06,405 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-07 10:28:06,423 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-07 10:28:06,434 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-07 10:28:06,434 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-07 10:28:06,442 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-07 10:28:06,449 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-07 10:28:06,457 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-07 10:28:06,468 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-07 10:28:06,476 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-07 10:28:06,476 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-07 10:28:06,513 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-07 10:28:06,520 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-07 10:28:06,520 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-07 10:28:06,520 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-07 10:28:06,529 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-07 10:28:06,539 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-07 10:28:06,548 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-07 10:28:06,553 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-07 10:28:06,563 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-07 10:28:06,563 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-07 10:28:06,601 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-07 10:28:06,612 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-07 10:28:06,622 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-07 10:28:06,633 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2019-05-07 10:28:15,826 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:28:15,916 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:28:58,124 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:28:58,188 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:29:31,309 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:29:31,360 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:32:35,705 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:32:35,709 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:32:35,762 [WARNING] django.request: Not Found: /media/pexels-photo-691674.jpeg
+2019-05-07 10:32:35,795 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:33:12,856 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:33:12,860 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:33:17,579 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:33:17,591 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:33:18,584 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:33:18,590 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:35:50,609 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:35:50,614 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:35:53,936 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:35:53,940 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 10:36:37,891 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 10:36:37,893 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 15:55:06,972 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 15:55:06,974 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 15:55:07,008 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 15:55:07,089 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-07 15:55:09,246 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 15:55:09,248 [WARNING] django.request: Not Found: /media/default.png
+2019-05-07 15:55:33,709 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 15:55:56,311 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:00:03,665 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-07 16:00:03,669 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-07 16:00:03,670 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-07 16:00:03,674 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-07 16:00:03,678 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-07 16:00:03,687 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-07 16:00:03,691 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-07 16:00:03,710 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-07 16:00:03,715 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-07 16:00:03,720 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-07 16:00:03,725 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-07 16:00:03,726 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-07 16:00:03,730 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-07 16:00:03,733 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-07 16:00:03,733 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-07 16:00:03,737 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-07 16:00:03,741 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-07 16:00:03,750 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-07 16:00:03,754 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-07 16:00:03,762 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-07 16:00:03,766 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-07 16:00:03,770 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-07 16:00:03,770 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-07 16:00:03,771 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-07 16:00:03,778 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-07 16:00:03,783 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-07 16:00:03,783 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-07 16:00:03,787 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-07 16:00:03,792 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-07 16:00:03,795 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-07 16:00:03,799 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-07 16:00:03,801 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-07 16:00:03,801 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-07 16:00:03,816 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-07 16:00:03,820 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-07 16:00:03,820 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-07 16:00:03,820 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-07 16:00:03,825 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-07 16:00:03,829 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-07 16:00:03,833 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-07 16:00:03,835 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-07 16:00:03,836 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-07 16:00:03,836 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-07 16:00:03,858 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-07 16:00:03,860 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-07 16:00:03,864 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-07 16:00:03,868 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2019-05-07 16:00:05,358 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:03:22,593 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:03:22,595 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:03:22,696 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-07 16:03:39,165 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:03:55,586 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:04:03,686 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:04:03,691 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:04:28,531 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:04:28,535 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:04:29,130 [WARNING] django.request: Not Found: /media/746199.jpg
+2019-05-07 16:04:29,134 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:04:38,630 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-07 16:04:38,631 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-07 16:04:38,631 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-07 16:04:38,632 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-07 16:04:38,633 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-07 16:04:38,634 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-07 16:04:38,635 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-07 16:04:38,654 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-07 16:04:38,655 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-07 16:04:38,656 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-07 16:04:38,657 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-07 16:04:38,657 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-07 16:04:38,658 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-07 16:04:38,658 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-07 16:04:38,658 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-07 16:04:38,659 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-07 16:04:38,660 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-07 16:04:38,661 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-07 16:04:38,661 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-07 16:04:38,662 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-07 16:04:38,663 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-07 16:04:38,663 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-07 16:04:38,664 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-07 16:04:38,664 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-07 16:04:38,665 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-07 16:04:38,667 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-07 16:04:38,668 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-07 16:04:38,668 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-07 16:04:38,669 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-07 16:04:38,670 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-07 16:04:38,671 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-07 16:04:38,671 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-07 16:04:38,671 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-07 16:04:38,678 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-07 16:04:38,679 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-07 16:04:38,679 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-07 16:04:38,679 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-07 16:04:38,680 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-07 16:04:38,680 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-07 16:04:38,681 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-07 16:04:38,681 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-07 16:04:38,682 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-07 16:04:38,682 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-07 16:04:38,684 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-07 16:04:38,684 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-07 16:04:38,685 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-07 16:04:38,686 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2019-05-07 16:04:40,050 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:04:49,490 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
