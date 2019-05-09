@@ -7,9 +7,7 @@ from django.shortcuts import resolve_url
 from django.test.runner import DiscoverRunner
 from splinter.browser import Browser
 
-
-
-os.environ["DJANGO_SETTINGS_MODULE"] = "catalog.settings"
+os.environ["DJANGO_SETTINGS_MODULE"] = "Library.settings"
 
 class ExtendedContext(Context):
     def get_url(self, to=None, *args, **kwargs):

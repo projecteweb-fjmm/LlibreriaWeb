@@ -2106,3 +2106,1213 @@ django.core.exceptions.PermissionDenied
 2019-05-07 16:04:38,686 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
 2019-05-07 16:04:40,050 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
 2019-05-07 16:04:49,490 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:08:41,238 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-07 16:08:41,243 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:08:56,757 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-07 16:08:56,760 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-07 16:09:08,277 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-07 16:09:08,281 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 18:17:37,702 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 18:17:37,705 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 18:17:39,286 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-08 18:17:46,176 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 18:17:46,177 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 18:29:31,164 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 18:29:31,166 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 18:29:36,359 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = request.get('http://www.etnassoft.com/api/v1/get/?id=589')
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+2019-05-08 18:29:52,061 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = request.get('http://www.etnassoft.com/api/v1/get/?id=589')
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+2019-05-08 18:29:54,751 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = request.get('http://www.etnassoft.com/api/v1/get/?id=589')
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+2019-05-08 18:31:13,221 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:15,336 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:16,018 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:16,728 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:17,430 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:18,021 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:18,589 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:19,151 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:19,691 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:31:20,202 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = request.post('http://www.etnassoft.com/api/v1/get/?id=589', data=payload)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+2019-05-08 18:47:21,833 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): freegeoip.net:80
+2019-05-08 18:47:22,023 [DEBUG] urllib3.connectionpool: http://freegeoip.net:80 "GET /json/ HTTP/1.1" 301 None
+2019-05-08 18:47:22,081 [DEBUG] urllib3.connectionpool: http://freegeoip.net:80 "GET /shutdown HTTP/1.1" 403 None
+2019-05-08 18:47:22,288 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 28, in index
+    return render(request, 'generic.html', context={'book':book,'ip': geodata['ip']})
+KeyError: 'ip'
+2019-05-08 18:51:49,556 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 18:51:50,483 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?category=libros_programacion&criteria=most_viewed HTTP/1.1" 200 7191
+2019-05-08 18:51:50,773 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = response.json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 18:53:35,511 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 18:53:36,173 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?category=libros_programacion&criteria=most_viewed HTTP/1.1" 200 7191
+2019-05-08 18:53:36,380 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = response.json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 18:54:45,556 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 18:54:46,239 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?category=libros_programacion&criteria=most_viewed HTTP/1.1" 200 7191
+2019-05-08 19:08:44,011 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:08:44,615 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:08:45,122 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = response.json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:08:59,281 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:08:59,852 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:09:00,164 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = response.json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:09:06,286 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:09:06,872 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:09:07,157 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = response.json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:09:26,707 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:09:27,295 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:09:27,790 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    r = response.json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:12:52,963 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:12:56,516 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:12:56,521 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:13:56,425 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:13:56,429 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:40:04,198 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:40:04,200 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:46:29,799 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:46:30,367 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:46:30,423 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:46:30,426 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:46:32,074 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:46:32,650 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:46:32,692 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:46:32,694 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:46:55,129 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:46:55,746 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:47:14,841 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:47:15,419 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:47:15,489 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:47:15,494 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:47:24,116 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:47:24,697 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:47:24,765 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:47:24,767 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:47:33,939 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:47:34,503 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:47:34,938 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 27, in index
+    return render(request, 'generic.html', context={'book':book,'response':response})
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 53, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 858, in _resolve_lookup
+    current = current()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:47:44,309 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:47:44,920 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:47:44,972 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:47:44,974 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:48:15,660 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:48:16,280 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:48:16,360 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:48:16,361 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:48:23,436 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:48:24,016 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:48:24,056 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:48:24,058 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:48:57,930 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:48:58,559 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:48:58,597 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:48:58,600 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:49:00,907 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:49:01,508 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:49:01,703 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    response = requests.get("http://www.etnassoft.com/api/v1/get/?id=589&callback=?").json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:49:09,242 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:49:09,827 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:49:09,895 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 25, in index
+    response = requests.get("http://www.etnassoft.com/api/v1/get/?id=589&callback=?")
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:49:32,058 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:49:33,904 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:49:34,503 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:49:34,698 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    response[2]
+TypeError: 'Response' object does not support indexing
+2019-05-08 19:49:35,165 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:49:35,736 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:49:35,782 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    response[2]
+TypeError: 'Response' object does not support indexing
+2019-05-08 19:52:05,921 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:52:06,556 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:52:06,620 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 19:52:06,623 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 19:52:08,808 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:52:09,405 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:52:09,581 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 31, in index
+    result = json.load(urllib.urlopen(response))
+AttributeError: module 'urllib' has no attribute 'urlopen'
+2019-05-08 19:52:46,658 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:52:47,261 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:52:47,323 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 31, in index
+    response = requests.get("http://www.etnassoft.com/api/v1/get/?id=589&callback=?")
+AttributeError: module 'urllib' has no attribute 'urlopen'
+2019-05-08 19:52:49,122 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:52:49,699 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:52:49,963 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 33, in index
+    result = json.load(urlopen(response))
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 518, in open
+    protocol = req.type
+AttributeError: 'Response' object has no attribute 'type'
+2019-05-08 19:53:07,120 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:53:07,756 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:53:10,341 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 33, in index
+    result = json.load(urlopen(response))
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:53:11,127 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 33, in index
+    result = json.load(urlopen(response))
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 299, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:55:09,561 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:55:10,172 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:55:10,370 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    response = requests.get("http://www.etnassoft.com/api/v1/get/?id=589&callback=?").json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 19:55:12,457 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 19:55:13,026 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 19:55:13,088 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    response = requests.get("http://www.etnassoft.com/api/v1/get/?id=589&callback=?").json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 20:09:38,930 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 20:35:36,516 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.coinmarketcap.com:443
+2019-05-08 20:35:37,246 [DEBUG] urllib3.connectionpool: https://api.coinmarketcap.com:443 "GET /v1/ticker/?convert=USD&limit=25%20%20%20%20 HTTP/1.1" 200 None
+2019-05-08 20:35:37,315 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 20:35:37,325 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 20:35:37,477 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-08 20:35:53,983 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): api.coinmarketcap.com:443
+2019-05-08 20:35:54,253 [DEBUG] urllib3.connectionpool: https://api.coinmarketcap.com:443 "GET /v1/ticker/?convert=USD&limit=25%20%20%20%20 HTTP/1.1" 200 None
+2019-05-08 20:35:54,314 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 20:35:54,317 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:09:50,502 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:09:51,177 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:09:51,221 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:09:51,224 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:09:51,343 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-08 21:09:53,894 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:09:54,448 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:09:54,480 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:09:54,487 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:10:09,257 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:10:09,873 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:10:09,956 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:10:09,959 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:10:11,714 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:10:12,302 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:10:12,348 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:10:12,350 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:10:22,931 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:10:23,479 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:10:23,535 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:10:23,537 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:10:31,445 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:10:31,995 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:10:32,041 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:10:32,044 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:10:39,198 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:10:39,759 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:10:39,807 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:10:39,830 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:10:50,924 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:10:51,479 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:10:51,564 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:10:51,570 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:11:02,912 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:11:03,531 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:11:03,591 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:11:03,593 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:11:39,686 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:11:41,381 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:11:41,956 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:11:44,223 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): www.etnassoft.com:80
+2019-05-08 21:11:44,773 [DEBUG] urllib3.connectionpool: http://www.etnassoft.com:80 "GET /api/v1/get/?id=589&callback=? HTTP/1.1" 200 1562
+2019-05-08 21:11:44,949 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = requests.get('http://www.etnassoft.com/api/v1/get/?id=589&callback=?').json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 21:11:44,952 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 26, in index
+    r = requests.get('http://www.etnassoft.com/api/v1/get/?id=589&callback=?').json()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 21:16:45,551 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\views.py", line 29, in index
+    r = json.loads(urlopen("http://www.etnassoft.com/api/v1/get/?id=589").read())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Francesc\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2019-05-08 21:26:39,101 [WARNING] django.request: Not Found: /cities/city/7223
+2019-05-08 21:26:39,232 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-08 21:30:56,149 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): od-api-demo.oxforddictionaries.com:443
+2019-05-08 21:30:59,394 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:31:00,111 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:31:00,197 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:31:00,200 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:31:23,216 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:31:23,730 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:31:23,784 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:31:23,787 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:31:33,596 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:31:34,091 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:31:34,165 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:31:34,167 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:32:52,684 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:32:53,352 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:32:53,678 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:32:54,208 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:32:54,240 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:32:54,243 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:33:38,477 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:33:39,814 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:33:39,873 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:33:39,876 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:36:12,923 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:36:13,516 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:36:13,575 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:36:13,583 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:36:32,090 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:36:32,755 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532699 HTTP/1.1" 200 None
+2019-05-08 21:36:32,817 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-08 21:36:32,818 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:36:35,547 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-08 21:36:36,301 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532499 HTTP/1.1" 200 None
+2019-05-08 21:36:36,342 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-08 21:36:36,345 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 17:19:41,969 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-09 17:19:43,539 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /books/v1/volumes?q=isbn:0747532499 HTTP/1.1" 200 None
+2019-05-09 17:19:43,730 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 17:19:43,732 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 17:19:44,076 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-09 18:06:17,210 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:06:17,212 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:06:29,653 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-09 18:06:30,313 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-09 18:06:30,320 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-09 18:06:30,697 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-09 18:06:31,335 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:06:31,339 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:06:44,981 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:06:44,984 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:06:59,211 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-09 18:06:59,514 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-09 18:06:59,520 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-09 18:06:59,852 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-09 18:07:00,284 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:07:00,285 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:19:45,473 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:19:45,475 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:19:48,443 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:19:48,445 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:20:24,995 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:20:24,997 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:21:40,290 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:21:40,292 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:24:20,804 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:24:20,807 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:24:23,820 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:24:23,822 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:24:27,254 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-09 18:24:27,850 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-09 18:24:27,854 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-09 18:24:28,246 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-09 18:24:28,843 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:24:28,846 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:25:11,195 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:25:11,196 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:25:18,118 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:25:18,121 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:25:20,660 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-09 18:25:21,260 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-09 18:25:21,265 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-09 18:25:21,646 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-09 18:25:22,016 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:25:22,024 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:25:24,129 [WARNING] django.request: Not Found: /media/pexels-photo-640783.jpeg
+2019-05-09 18:25:24,131 [WARNING] django.request: Not Found: /media/steve-halama-419088-unsplash.jpg
+2019-05-09 18:26:25,026 [ERROR] django.request: Internal Server Error: /admin/catalog/bookinstance/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 564, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 278, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 309, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 566, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: BookInstance has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 341, in result_list
+    'results': list(results(cl))}
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 318, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 228, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 291, in lookup_field
+    value = attr()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 87, in __str__
+    return 'ID: %s - Title: %s' % (self.id, self.book.title)
+AttributeError: 'NoneType' object has no attribute 'title'
+2019-05-09 18:26:30,020 [ERROR] django.request: Internal Server Error: /admin/catalog/bookinstance/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 564, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 278, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 309, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 566, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: BookInstance has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 341, in result_list
+    'results': list(results(cl))}
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 318, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 228, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 291, in lookup_field
+    value = attr()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 87, in __str__
+    return 'ID: %s - Title: %s' % (self.id, self.book.title)
+AttributeError: 'NoneType' object has no attribute 'title'
+2019-05-09 18:26:33,109 [ERROR] django.request: Internal Server Error: /admin/catalog/bookinstance/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 564, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 278, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 309, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 566, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: BookInstance has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 341, in result_list
+    'results': list(results(cl))}
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 318, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 228, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 291, in lookup_field
+    value = attr()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 87, in __str__
+    return 'ID: %s - Title: %s' % (self.id, self.book.title)
+AttributeError: 'NoneType' object has no attribute 'title'
+2019-05-09 18:26:41,814 [ERROR] django.request: Internal Server Error: /admin/catalog/bookinstance/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 564, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 278, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 309, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 566, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: BookInstance has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 341, in result_list
+    'results': list(results(cl))}
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 318, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 228, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 291, in lookup_field
+    value = attr()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 87, in __str__
+    return 'ID: %s - Title: %s' % (self.id, self.book.title)
+AttributeError: 'NoneType' object has no attribute 'title'
+2019-05-09 18:26:57,825 [ERROR] django.request: Internal Server Error: /admin/catalog/bookinstance/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 564, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 278, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 309, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\db\models\options.py", line 566, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: BookInstance has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 341, in result_list
+    'results': list(results(cl))}
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 318, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 228, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\contrib\admin\utils.py", line 291, in lookup_field
+    value = attr()
+  File "C:\Users\Francesc\OneDrive\OneDrive\Enginyeria Informàtica\3r - Curs 2018-19\Projecte Web\Practiques\Deliverable 1\LlibreriaWeb\Library\catalog\models.py", line 87, in __str__
+    return 'ID: %s - Title: %s' % (self.id, self.book.title)
+AttributeError: 'NoneType' object has no attribute 'title'
+2019-05-09 18:28:41,933 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-09 18:28:42,677 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-09 18:28:42,682 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-09 18:28:43,124 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None

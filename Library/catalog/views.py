@@ -1,5 +1,4 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.http import Http404
 from django.shortcuts import render
 from .models import Book, Author
 from django.core.exceptions import PermissionDenied
