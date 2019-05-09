@@ -1,35 +1,19 @@
-Feature: Register Book
-  In order to keep track of the books I visit
-  As a user
-  I want to register a book together with its location and contact details
+Feature: User Adds Book
+  In order to provide content to my users
+  As an user
+  I want to register a Book with all it's information
 
-  Background: There is a registered user
-    Given Exists a user "admin" with password "admin"
+  Background: There is a registered user and book
+    Given Exists an admin "admin" with password "admin"
+    And No Exists Book registered
 
-  Scenario: Register just book title
-    Given I login as user "admin" with password "admin"
-    When I register book
-      | title        |
-      | The Tavern  |
-    Then I'm viewing the details page for book by "admin"
-      | title        |
-      | The Tavern  |
-    And There are 1 book
-
-  Scenario: Register just book name and
-    Given I login as user "admin" with password "admin"
-    When I register book
-      | title        | author      | isbn   |
-      | The Tavern  | Josep Lladanosa    | England   |
-    Then I'm viewing the details page for book by "admin"
-      | title        | author      | isbn   |
-      | The Tavern  | Josep Lladanosa   | England   |
-    And There are 1 book
-
-  Scenario: Try to register book but not logged in
-    Given I'm not logged in
-    When I register book
-      | title        |
-      | The Tavern  |
-    Then I'm redirected to the login form
-    And There are 0 book
+  Scenario: Register a Book with all info
+    Given I login as admin "admin" with password "admin"
+    And
+    When I register the Book
+      | title                     | author | summary | isb | genre | language |
+      | El gato que quiso volar   | Jose Canas | Un gato quiero volar, para ello usa perico |  4444444489102| Drogadiccion | Castellano |
+    Then I'm viewing the details page for the Degree
+      | title                     | author | summary | isb | genre | language |
+      | El gato que quiso volar   | Jose Canas | Un gato quiero volar, para ello usa perico |  4444444489102| Drogadiccion | Castellano |
+    And There is 1 Book
