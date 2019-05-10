@@ -1,15 +1,9 @@
 Feature: Register Book
+  Given Exists a user "username" with password "password"
 
-  Background: There is a registered user and book
-    Given Exists a user "username" with password "password"
-
-
-  Scenario: Register a Book
-    Given I login as user "username" with password "username"
-    When I register book
-      | title |
-      | The 100 |
-    Then Im viewing the details page for book
-      | title |
-      | The 100 |
-    And There are 1 book
+Scenario: Register just book title
+  Given I login as user "username" with password "password"
+  When  I register book
+    | title | author | summary | isbn | genre | language | date_published |
+    | The 100 | Roger Jenkins | Survival apocalipse world | 891-874-845-X | Aventura | Castellano | 10/05/2019 |
+  Then There are 1 book
