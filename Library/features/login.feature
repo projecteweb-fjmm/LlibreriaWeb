@@ -4,9 +4,9 @@ Feature: Login
   I want to login in the system
 
   Background: There is a registered user
-    Given Exists a user "user" with password "password"
+    Given Exists a user "username" with password "password"
 
 
   Scenario: Registered user wants to login to the system
-    Given I login as user "user" with password "password"
-    Then I'm viewing user "user" home page
+    Given I login as user "username" with password "password"
+    Then I'm viewing user "username" home page

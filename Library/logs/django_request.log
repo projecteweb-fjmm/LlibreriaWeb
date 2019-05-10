@@ -3316,3 +3316,31 @@ AttributeError: 'NoneType' object has no attribute 'title'
 2019-05-09 18:28:42,677 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
 2019-05-09 18:28:42,682 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
 2019-05-09 18:28:43,124 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-10 11:03:34,925 [DEBUG] selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:52127/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}
+2019-05-10 11:03:34,933 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:52127
+2019-05-10 11:03:36,573 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52127 "POST /session HTTP/1.1" 200 1031
+2019-05-10 11:03:36,575 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:03:43,844 [DEBUG] selenium.webdriver.remote.remote_connection: DELETE http://127.0.0.1:52127/session/cf55affc9c405c111e2108563fab46e4 {"sessionId": "cf55affc9c405c111e2108563fab46e4"}
+2019-05-10 11:03:43,857 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52127 "DELETE /session/cf55affc9c405c111e2108563fab46e4 HTTP/1.1" 200 72
+2019-05-10 11:03:43,858 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:07:22,913 [DEBUG] selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:52189/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}
+2019-05-10 11:07:22,914 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:52189
+2019-05-10 11:07:24,528 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52189 "POST /session HTTP/1.1" 200 1030
+2019-05-10 11:07:24,529 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:07:29,086 [DEBUG] selenium.webdriver.remote.remote_connection: DELETE http://127.0.0.1:52189/session/d1f70e403051805a643b75d1518afe06 {"sessionId": "d1f70e403051805a643b75d1518afe06"}
+2019-05-10 11:07:29,097 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52189 "DELETE /session/d1f70e403051805a643b75d1518afe06 HTTP/1.1" 200 72
+2019-05-10 11:07:29,098 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:09:08,533 [DEBUG] selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:52220/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}
+2019-05-10 11:09:08,535 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:52220
+2019-05-10 11:09:10,133 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52220 "POST /session HTTP/1.1" 200 1030
+2019-05-10 11:09:10,136 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:09:14,647 [DEBUG] selenium.webdriver.remote.remote_connection: DELETE http://127.0.0.1:52220/session/bf2b038fea8312649b2ef7eca2938e46 {"sessionId": "bf2b038fea8312649b2ef7eca2938e46"}
+2019-05-10 11:09:14,659 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52220 "DELETE /session/bf2b038fea8312649b2ef7eca2938e46 HTTP/1.1" 200 72
+2019-05-10 11:09:14,660 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:10:43,981 [DEBUG] selenium.webdriver.remote.remote_connection: POST http://127.0.0.1:52250/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu"]}}}
+2019-05-10 11:10:43,982 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:52250
+2019-05-10 11:10:45,581 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52250 "POST /session HTTP/1.1" 200 1031
+2019-05-10 11:10:45,583 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-10 11:10:50,049 [DEBUG] selenium.webdriver.remote.remote_connection: DELETE http://127.0.0.1:52250/session/213ff812111df3d8e578f1e3eb5bcc00 {"sessionId": "213ff812111df3d8e578f1e3eb5bcc00"}
+2019-05-10 11:10:50,063 [DEBUG] urllib3.connectionpool: http://127.0.0.1:52250 "DELETE /session/213ff812111df3d8e578f1e3eb5bcc00 HTTP/1.1" 200 72
+2019-05-10 11:10:50,064 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
