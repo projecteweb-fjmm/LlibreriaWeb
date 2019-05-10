@@ -62,7 +62,7 @@ class BookCreate(LoginRequiredMixin,generic.CreateView):
 class BookUpdate(LoginRequiredMixin,CheckIsOwnerMixin,generic.UpdateView):
     template_name = 'changes/UpdateBook.html'
     model = Book
-    fields = ['title','author','summary','isb','genre','language','date_published','picture']
+    fields = ['title','author','summary','isbn','genre','language','date_published','picture']
 
 class BookDelete(LoginRequiredMixin,CheckIsOwnerMixin,generic.DeleteView):
     template_name = 'changes/DeleteBook.html'

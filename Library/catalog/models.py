@@ -46,7 +46,7 @@ class Book (models.Model):
 
     summary = models.TextField(max_length=500, help_text="Escribe un breve resumen del libro")
 
-    isb = models.CharField('ISBN', max_length=13, help_text="Escribe un ISBN valido (13 caracteres)")
+    isbn = models.CharField('ISBN', max_length=13, help_text="Escribe un ISBN valido (13 caracteres)")
 
     genre = models.ManyToManyField(Genre, help_text="Selecciona un genero literario")
 
