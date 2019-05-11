@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    {% block title %} <title>Inicio</title> {% endblock %}
+    {% block title %} <title>Home Page</title> {% endblock %}
 
      <!-- BOOTSTRAP 3 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -20,14 +20,15 @@
 
                 <ul class="nav navbar-nav">
                     <li><a href="{% url 'index' %}">Home</a></li>
-                    <li><a href="{% url 'all_books' %}">Libros</a></li>
-                    <li><a href="{% url 'author' %}">Autores</a></li>
+                    <li><a href="{% url 'all_books' %}">Books</a></li>
+                    <li><a href="{% url 'author' %}">Authors</a></li>
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a href="#"><span class="glyphicon"></span> Hi {{ user.username }}</a></li>
-                        <li><a href="{% url 'book_create' %}"><span class="glyphicon glyphicon-cloud-upload"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Hi, {{ user.username }}</a></li>
+                        <li><a href="{% url 'book_create' %}"><span class="glyphicon glyphicon-cloud-upload"></span> Upload Book</a></li>
+                        <li><a href="{% url 'author_create' %}"><span class="glyphicon glyphicon-plus-sign"></span> Create Author</a></li>
                         <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                     {% else %}
                         <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -38,12 +39,12 @@
         </nav>
 
         {% block content %}
-            <h1 align="center" style="margin-bottom: 2%">TOP BEST SELLER</h1>
+            <h1 align="center" style="margin-bottom: 2%">Recent Books</h1>
             <div class="container" >
                 <div  align="center">
                     {% for llibre in book %}
                         <h3 style="margin-bottom: 2%"> {{ llibre.title }} - {{ llibre.author }}</h3>
-                        <img style="margin-bottom: 4%" src="{{ llibre.picture.url }}" alt="{{ llibre.title }}">
+                        <img style="margin-bottom: 4%" src="{{ llibre.picture.url }}" width="250px" alt="{{ llibre.title }}">
                     {% endfor %}
                 </div>
             </div>

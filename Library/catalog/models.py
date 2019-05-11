@@ -28,8 +28,10 @@ class Author(models.Model):
 
     second_name = models.CharField(max_length=32)
 
-    native_language = models.OneToOneField(Language, on_delete=models.SET_NULL, null=True,
+    native_language = models.ForeignKey(Language, on_delete=models.SET_NULL, null=True,
                                            help_text="Selecciona el lenguage nativo de escritura del autor")
+
+    user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
 
     def __str__(self):
         return '%s  %s' % (self.first_name, self.second_name)

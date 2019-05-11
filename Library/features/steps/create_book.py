@@ -1,7 +1,4 @@
 from behave import *
-import operator
-from functools import reduce
-from django.db.models import Q
 
 use_step_matcher("parse")
 

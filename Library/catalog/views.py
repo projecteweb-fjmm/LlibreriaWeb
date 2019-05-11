@@ -20,7 +20,7 @@ class CheckIsOwnerMixin(object):
 # Create your views here.
 
 def index(request):
-    book = Book.objects.all()
+    book = Book.objects.all().order_by('-date_published')
 
     return render(request, 'generic.html', context={'book':book})
 
@@ -50,7 +50,7 @@ class AuthorDetailView(generic.DetailView):
     model = Author
 
 class BookCreate(LoginRequiredMixin,generic.CreateView):
-    template_name = 'changes/CreateBook.html'
+    template_name = 'changes/Create.html'
     model = Book
     form_class = BookForm
     success_url = '/all_books'
@@ -69,6 +69,25 @@ class BookDelete(LoginRequiredMixin,CheckIsOwnerMixin,generic.DeleteView):
     model = Book
     success_url = reverse_lazy('all_books')
 
+class AuthorCreate(LoginRequiredMixin,generic.CreateView):
+    template_name = 'changes/Create.html'
+    model = Author
+    form_class = AuthorForm
+    success_url = '/author'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(AuthorCreate,self).form_valid(form)
+
+class AuthorUpdate(LoginRequiredMixin,CheckIsOwnerMixin,generic.UpdateView):
+    template_name = 'changes/UpdateAuthor.html'
+    model = Author
+    fields = ['first_name','second_name','native_language']
+
+class AuthorDelete(LoginRequiredMixin,CheckIsOwnerMixin,generic.DeleteView):
+    template_name = 'changes/DeleteAuthor.html'
+    model = Author
+    success_url = reverse_lazy('author')
 
 
 
