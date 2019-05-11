@@ -4082,3 +4082,51 @@ AttributeError: 'NoneType' object has no attribute 'title'
 2019-05-11 00:23:22,801 [DEBUG] selenium.webdriver.remote.remote_connection: DELETE http://127.0.0.1:58135/session/f43dd5999d14a995454c6b847d6f200d {"sessionId": "f43dd5999d14a995454c6b847d6f200d"}
 2019-05-11 00:23:22,814 [DEBUG] urllib3.connectionpool: http://127.0.0.1:58135 "DELETE /session/f43dd5999d14a995454c6b847d6f200d HTTP/1.1" 200 72
 2019-05-11 00:23:22,815 [DEBUG] selenium.webdriver.remote.remote_connection: Finished Request
+2019-05-11 10:25:04,334 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-11 10:31:01,996 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-11 10:31:02,021 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-11 10:31:02,022 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-11 10:31:02,033 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-11 10:31:02,041 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-11 10:31:02,060 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-11 10:31:02,068 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-11 10:31:02,124 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-11 10:31:02,130 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-11 10:31:02,141 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-11 10:31:02,147 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-11 10:31:02,147 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-11 10:31:02,154 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-11 10:31:02,176 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-11 10:31:02,177 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-11 10:31:02,192 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-11 10:31:02,200 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-11 10:31:02,255 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-11 10:31:02,260 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-11 10:31:02,283 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-11 10:31:02,294 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-11 10:31:02,299 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-11 10:31:02,299 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-11 10:31:02,300 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-11 10:31:02,318 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-11 10:31:02,351 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-11 10:31:02,352 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-11 10:31:02,411 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-11 10:31:02,416 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-11 10:31:02,421 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-11 10:31:02,441 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-11 10:31:02,450 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-11 10:31:02,450 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-11 10:31:02,480 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-11 10:31:02,504 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-11 10:31:02,504 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-11 10:31:02,505 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-11 10:31:02,510 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-11 10:31:02,516 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-11 10:31:02,528 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-11 10:31:02,535 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-11 10:31:02,560 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-11 10:31:02,560 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-11 10:31:02,597 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-11 10:31:02,603 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-11 10:31:02,609 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-11 10:31:02,621 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
