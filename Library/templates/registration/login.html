@@ -2,6 +2,7 @@
 {% block title %}<title>Login</title>{% endblock %}
 
 {% block content %}
+    {% load static %}
     <div class="container">
         <div class="list-group">
     {% if form.errors %}
@@ -19,10 +20,12 @@
                     <td>{{ form.password }}</td>
                 </tr>
             </table>
-            <input type="submit" value="login" />
-            <input type="hidden" name="next" value="{{ next }}" />
+            <input type="submit" value="Login" />
+            <input type="hidden" name="next" value="{{ next }}"/>
         </form>
-         <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a><br>
+
         </div>
+        <a href="{% url 'social:begin' 'google-oauth2' %}"><img src="{% static 'busqueda.svg' %}" width="30" height="30" class="d-inline-block align-top" alt=""> Login with Google</a>
+
     </div>
     {% endblock %}

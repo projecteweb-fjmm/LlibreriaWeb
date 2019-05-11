@@ -3,9 +3,9 @@
 {% block content %}
     <div class="container">
         <div class="list-group">
-            <p><strong>Nombre:</strong> {{ author.first_name }}</p>
-            <p><strong>Apellido:</strong> {{ author.second_name }}</p>
-            <p><strong>Lengua:</strong> {{ author.native_language }}</p>
+            <p><strong>First Name:</strong> {{ author.first_name }}</p>
+            <p><strong>Second Name:</strong> {{ author.second_name }}</p>
+            <p><strong>Native Language:</strong> {{ author.native_language }}</p>
         </div>
 
     {% if user == author.user %}

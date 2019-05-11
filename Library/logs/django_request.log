@@ -4331,3 +4331,686 @@ Traceback (most recent call last):
   File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 663, in __init__
     "from '%s'" % (token[upto:], token))
 django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% url 'book_detail' llibre.pk %' from '% url 'book_detail' llibre.pk %'
+2019-05-11 12:35:10,204 [ERROR] django.request: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2019-05-11 12:35:22,870 [ERROR] django.request: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2019-05-11 12:35:23,807 [ERROR] django.request: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2019-05-11 12:35:24,689 [ERROR] django.request: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'static', expected 'endblock'. Did you forget to register or load this tag?
+2019-05-11 12:39:15,587 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-11 12:39:16,271 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-11 12:39:16,276 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-11 12:39:16,644 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-11 12:39:20,354 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-11 12:39:20,691 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-11 12:39:20,697 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-11 12:39:21,037 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-11 12:39:35,505 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-11 12:39:35,869 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-11 12:39:35,873 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-11 12:39:36,209 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-11 12:39:45,629 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): accounts.google.com:443
+2019-05-11 12:39:45,975 [DEBUG] urllib3.connectionpool: https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+2019-05-11 12:39:45,980 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): www.googleapis.com:443
+2019-05-11 12:39:46,327 [DEBUG] urllib3.connectionpool: https://www.googleapis.com:443 "GET /oauth2/v3/userinfo HTTP/1.1" 200 None
+2019-05-11 12:54:30,800 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-11 12:54:30,802 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-11 12:54:30,803 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-11 12:54:30,804 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-11 12:54:30,805 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-11 12:54:30,807 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-11 12:54:30,808 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-11 12:54:30,842 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-11 12:54:30,844 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-11 12:54:30,845 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-11 12:54:30,847 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-11 12:54:30,848 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-11 12:54:30,849 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-11 12:54:30,850 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-11 12:54:30,850 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-11 12:54:30,851 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-11 12:54:30,852 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-11 12:54:30,854 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-11 12:54:30,855 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-11 12:54:30,856 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-11 12:54:30,858 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-11 12:54:30,860 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-11 12:54:30,861 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-11 12:54:30,862 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-11 12:54:30,864 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-11 12:54:30,867 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-11 12:54:30,868 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-11 12:54:30,869 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-11 12:54:30,870 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-11 12:54:30,871 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-11 12:54:30,873 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-11 12:54:30,874 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-11 12:54:30,874 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-11 12:54:30,886 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-11 12:54:30,887 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-11 12:54:30,888 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-11 12:54:30,889 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-11 12:54:30,890 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-11 12:54:30,893 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-11 12:54:30,895 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-11 12:54:30,898 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-11 12:54:30,900 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-11 12:54:30,901 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-11 12:54:30,904 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-11 12:54:30,905 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-11 12:54:30,907 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-11 12:54:30,908 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2019-05-11 13:00:59,383 [DEBUG] PIL.PngImagePlugin: STREAM b'IHDR' 16 13
+2019-05-11 13:00:59,383 [DEBUG] PIL.PngImagePlugin: STREAM b'gAMA' 41 4
+2019-05-11 13:00:59,383 [DEBUG] PIL.PngImagePlugin: STREAM b'IDAT' 57 9657
+2019-05-11 13:01:12,314 [WARNING] django.request: Not Found: /media/default.png
+2019-05-11 13:02:45,316 [DEBUG] PIL.PngImagePlugin: STREAM b'IHDR' 16 13
+2019-05-11 13:02:45,317 [DEBUG] PIL.PngImagePlugin: STREAM b'IDAT' 41 8192
+2019-05-11 13:02:52,682 [WARNING] django.request: Not Found: /a
+2019-05-11 13:05:30,303 [ERROR] django.request: Internal Server Error: /book/1
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:07:36,124 [ERROR] django.request: Internal Server Error: /book/1
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:07:41,891 [ERROR] django.request: Internal Server Error: /book/1
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:07:42,989 [ERROR] django.request: Internal Server Error: /book/1
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:07:56,364 [ERROR] django.request: Internal Server Error: /book/1
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:09:00,268 [ERROR] django.request: Internal Server Error: /book/3
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loaders\filesystem.py", line 23, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Francesc\\OneDrive\\OneDrive\\Enginyeria Informàtica\\3r - Curs 2018-19\\Projecte Web\\Practiques\\Deliverable 1\\LlibreriaWeb\\Library\\templates\\catalog\\book_detail.html'
+2019-05-11 13:09:34,292 [ERROR] django.request: Internal Server Error: /book/3
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:09:35,079 [ERROR] django.request: Internal Server Error: /book/3
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:09:40,684 [ERROR] django.request: Internal Server Error: /book/3
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2019-05-11 13:13:39,134 [ERROR] django.request: Internal Server Error: /author/6
+Traceback (most recent call last):
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Francesc\Documents\Virtualenv\modelproces_env\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: catalog/author_detail.html
+2019-05-11 13:14:39,963 [DEBUG] PIL.PngImagePlugin: STREAM b'IHDR' 16 13
+2019-05-11 13:14:39,963 [DEBUG] PIL.PngImagePlugin: STREAM b'IDAT' 41 8192
+2019-05-11 13:14:39,964 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2019-05-11 13:14:39,967 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2019-05-11 13:14:39,967 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2019-05-11 13:14:39,969 [DEBUG] PIL.Image: Importing CurImagePlugin
+2019-05-11 13:14:39,970 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2019-05-11 13:14:39,973 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2019-05-11 13:14:39,974 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2019-05-11 13:14:40,011 [DEBUG] PIL.Image: Importing FitsStubImagePlugin
+2019-05-11 13:14:40,012 [DEBUG] PIL.Image: Importing FliImagePlugin
+2019-05-11 13:14:40,012 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2019-05-11 13:14:40,014 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-05-11 13:14:40,014 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2019-05-11 13:14:40,015 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2019-05-11 13:14:40,016 [DEBUG] PIL.Image: Importing GifImagePlugin
+2019-05-11 13:14:40,016 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2019-05-11 13:14:40,016 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2019-05-11 13:14:40,017 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2019-05-11 13:14:40,019 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2019-05-11 13:14:40,020 [DEBUG] PIL.Image: Importing ImImagePlugin
+2019-05-11 13:14:40,021 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2019-05-11 13:14:40,022 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2019-05-11 13:14:40,022 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2019-05-11 13:14:40,023 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2019-05-11 13:14:40,023 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2019-05-11 13:14:40,023 [DEBUG] PIL.Image: Importing MicImagePlugin
+2019-05-11 13:14:40,026 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-05-11 13:14:40,026 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2019-05-11 13:14:40,027 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2019-05-11 13:14:40,028 [DEBUG] PIL.Image: Importing MspImagePlugin
+2019-05-11 13:14:40,054 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2019-05-11 13:14:40,058 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2019-05-11 13:14:40,059 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2019-05-11 13:14:40,059 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2019-05-11 13:14:40,081 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2019-05-11 13:14:40,082 [DEBUG] PIL.Image: Importing PngImagePlugin
+2019-05-11 13:14:40,082 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2019-05-11 13:14:40,082 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2019-05-11 13:14:40,083 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2019-05-11 13:14:40,084 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2019-05-11 13:14:40,085 [DEBUG] PIL.Image: Importing SunImagePlugin
+2019-05-11 13:14:40,086 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2019-05-11 13:14:40,087 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2019-05-11 13:14:40,087 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2019-05-11 13:14:40,089 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2019-05-11 13:14:40,090 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2019-05-11 13:14:40,092 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2019-05-11 13:14:40,093 [DEBUG] PIL.Image: Importing XVThumbImagePlugin

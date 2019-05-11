@@ -1,5 +1,5 @@
 {% extends 'generic.html' %}
-{% block title %}<title>Registrar Libro</title>{% endblock %}
+{% block title %}<title>Update Author {{ author.second_name }}, {{ author.first_name }} </title>{% endblock %}
 {% block content %}
 <div class="container">
         <div class="list-group">
@@ -9,7 +9,7 @@
     <input type="submit" value="Update">
 </form>
                 {% else %}
-                <h1>No tienes permisos de edición</h1>
+                <h1>You don't have edit permissions</h1>
             {% endif %}
           </div>
     </div>

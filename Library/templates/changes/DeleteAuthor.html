@@ -1,16 +1,16 @@
 {% extends 'generic.html' %}
-{% block title %}<title>Registrar Author</title>{% endblock %}
+{% block title %}<title>Delete Author {{ author.second_name }}, {{ author.first_name }}</title>{% endblock %}
 {% block content %}
 <div class="container">
         <div class="list-group">
 
             {% if user == author.user %}
                 <form method="post">{% csrf_token %}
-                    <p>Are you sure you want to delete "{{ book }}"?</p>
+                    <p>Are you sure you want to delete "{{ author.first_name }}, {{author.second_name  }}"?</p>
                     <input type="submit" value="Confirm">
                 </form>
             {% else %}
-                <h1>No tienes permisos de edición</h1>
+                <h1>You don't have edit permissions</h1>
             {% endif %}
           </div>
     </div>
