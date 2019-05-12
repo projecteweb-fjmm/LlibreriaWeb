@@ -5,10 +5,20 @@
 It has been incorporated that the user can upload an image in the model of the book, have also rectified models of which were not 
 very accurate and caused inconsistencies.
 
-## How need to create the CreateView, UpdateView and DeleteView ?
+## How need to create the CreateView, UpdateView and DeleteView
 
 First of all we had to create a new view of the type _DetailsView_, in order to be able to access the attributes of each model 
-individually.
+individually. A user cannot update nor delete a created object of another user. A user needs to be logged to create an object. It is important to take account of the primary key to be able to carry out the access through the object url and be able to update it or delete it.
+
+## Test
+It has been done scenarios for the creation, update and delete features. Unfortunately, it has been developed satisfactorily only the creation features scenarios. In the others, there had been some code errors which it has not been able to solve. It has been used a Windows OS, therefore, it has been needed to include in the virtual environment the [ChromeDriver](http://chromedriver.chromium.org/)
+
+## Security
+Speaking of web security level, the user has to be authenticated to create, update or delete objects;  if the user is not authenticated, the web redirects them to the log in page, so that they do not make a fraudulent use of the application.
+
+## HTML Improvements
+It has been used the bootstrap 3 to ease the web interface development and it has been reestructurated the html code. Besides it has been included some icons to improve the web usability.
+
 
 ## API - Google OAuth
 
