@@ -2,12 +2,14 @@
 {% block title %}<title>Authors</title>{% endblock %}
 {% block content %}
      <h1 align="center" style="margin-bottom: 5%">Authors</h1>
+        <span vocab="http://schema.org/" typeof="Listitem">
             <div class="container" >
-                <div class="list-group" align="center">
-                 <a href="#" class="list-group-item active">Authors</a>
-                    {% for i in autores %}
-                        <a href="{% url 'author_detail' i.pk  %} " class="list-group-item">{{ i.first_name }} {{ i.second_name }}</a>
-                    {% endfor %}
-                </div>
+              <div class="list-group" align="center">
+                <a href="#" class="list-group-item active">Authors</a>
+                {% for i in autores %}
+                    <a property="item" typeof="Person" href="{% url 'author_detail' i.pk  %} " class="list-group-item"><span property="name">{{ i.first_name }} {{ i.second_name }}</span></a>
+                {% endfor %}
+              </div>
             </div>
+        </span>
 {% endblock %}
