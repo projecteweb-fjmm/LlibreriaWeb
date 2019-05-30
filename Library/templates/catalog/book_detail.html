@@ -1,9 +1,10 @@
 {% extends 'generic.html' %}
-{% block title %}<title>{{ book.title }}</title>{% endblock %}
+{% block title %}<title>Book:{{ book.title }} by {{ book.author}}</title>{% endblock %}
 {% block content %}
 
     <div class="container">
         <div class="list-group">
+        <span vocab="http://schema.org/" typeof="Book"></span>
             <h1>{{ book.title }}</h1>
 
             <p><strong>Author:</strong> <a href="{% url 'author_detail' book.author.pk %}">{{ book.author }}</a></p>

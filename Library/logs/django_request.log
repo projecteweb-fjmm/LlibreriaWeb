@@ -5034,3 +5034,6 @@ Traceback (most recent call last):
     raise PermissionDenied
 django.core.exceptions.PermissionDenied
 2019-05-11 20:21:33,427 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-21 09:33:35,010 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2019-05-21 09:34:47,682 [WARNING] django.request: Not Found: /favicon.ico
+2019-05-24 14:30:06,033 [WARNING] django.request: Not Found: /favicon.ico
