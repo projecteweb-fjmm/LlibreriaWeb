@@ -4,11 +4,11 @@
 <div class="container">
         <div class="list-group">
             {% if user == author.user %}
-<form method="post" enctype="multipart/form-data">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Update">
-</form>
-                {% else %}
+                <form method="post" enctype="multipart/form-data">{% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Update">
+                </form>
+            {% else %}
                 <h1>You don't have edit permissions</h1>
             {% endif %}
           </div>

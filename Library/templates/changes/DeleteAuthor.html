@@ -3,7 +3,6 @@
 {% block content %}
 <div class="container">
         <div class="list-group">
-
             {% if user == author.user %}
                 <form method="post">{% csrf_token %}
                     <p>Are you sure you want to delete "{{ author.first_name }}, {{author.second_name  }}"?</p>

@@ -2,10 +2,11 @@
 {% block title %}<title>{{ author.first_name }}</title>{% endblock %}
 {% block content %}
     <div class="container">
-        <div class="list-group">
-            <p><strong>First Name:</strong> {{ author.first_name }}</p>
-            <p><strong>Second Name:</strong> {{ author.second_name }}</p>
-            <p><strong>Native Language:</strong> {{ author.native_language }}</p>
+
+        <div class="list-group" vocab="http://schema.org/" typeof="Person">
+            <p><strong>First Name: </strong><span property="givenName">{{ author.first_name }}</span></p>
+            <p><strong>Second Name: </strong> <span property="familyName">{{ author.second_name }}</span></p>
+            <p><strong>Native Language: </strong> <span property="knowsLanguage">{{ author.native_language }}</span></p>
         </div>
 
     {% if user == author.user %}
